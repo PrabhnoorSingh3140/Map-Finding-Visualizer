@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MapRoute Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="map"></main>
+
+  <section class="route-card">
+    <div class="brand">MapRoute <span>Visualizer</span></div>
+
+    <div class="location-row">
+      <i class="dot start-dot"></i>
+      <div><small>START</small><strong>Start Location</strong></div>
+    </div>
+
+    <div class="location-row">
+      <i class="pin end-dot"></i>
+      <div><small>DESTINATION</small><strong>Destination</strong></div>
+    </div>
+
+    <label for="algorithm">Pathfinding algorithm</label>
+    <select id="algorithm">
+      <option value="bfs">BFS — Shortest unweighted path</option>
+      <option value="dfs">DFS — Depth first search</option>
+      <option value="dijkstra">Dijkstra — Shortest path</option>
+      <option value="astar" selected>A* — Smart route</option>
+    </select>
+    <button id="startBtn">Select Start</button>
+    <button id="endBtn">Select End</button>
+    <div class="actions">
+      <button id="routeBtn" class="primary">Find Route</button>
+      <button id="mazeBtn">Add Buildings</button>
+      <button id="clearBtn" class="danger">Clear Map</button>
+    </div>
+
+    <div id="status">Draw buildings on the map, then find a route.</div>
+  </section>
+
+  <div class="legend">
+    <span><i class="legend-box building-box"></i> Building</span>
+    <span><i class="legend-box visited-box"></i> Explored</span>
+    <span><i class="legend-box route-box"></i> Route</span>
+  </div>
+
+  <div class="help">Drag on the map to draw or erase buildings</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,49 +1,27 @@
-#  Map Finding Visualizer
+# MapRoute Visualizer
 
-An interactive web-based application designed to visualize map exploration and pathfinding algorithms.
+A map-inspired pathfinding visualizer built with HTML, CSS and JavaScript.
+
+## Algorithms
+- BFS
+- DFS
+- Dijkstra
+- A*
 
 ## Features
+- Map-style responsive UI
+- Draw and erase buildings by dragging
+- Random building generation
+- Animated node exploration
+- Final route animation
+- Nodes explored and route length statistics
 
-* Interactive map visualization
-* Pathfinding algorithm implementation
-* Start and destination point selection
-* Real-time path visualization
-* User-friendly interface
+## Run
+Open `index.html` in a modern browser.
 
-## Technologies Used
+No installation or API key is required.
 
-* Python
-* HTML
-* CSS
-* JavaScript
-* Flask
-
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/map-finding-visualizer.git
-```
-
-Navigate to the project directory:
-
-```bash
-cd map-finding-visualizer
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the application:
-
-```bash
-python app.py
-```
-
-## Author
-
-Prabhnoor Singh
+## Files
+- `index.html` - application structure
+- `style.css` - map-inspired interface
+- `script.js` - grid, algorithms and animations
